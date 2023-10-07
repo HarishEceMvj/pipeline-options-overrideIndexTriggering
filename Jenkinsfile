@@ -1,8 +1,7 @@
 pipeline{
   agent any
   options {
-      timestamps(true)
-      overrideIndexTriggers(true)
+      checkoutToSubdirectory('someSubdir')
   }
   stages{
     stage('Build'){
